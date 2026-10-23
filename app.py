@@ -264,8 +264,8 @@ st.markdown('<div class="section-heading">📊 Key Performance Indicators</div>'
 
 col1,col2,col3,col4=st.columns(4)
 
-col1.metric("Total Patients", f"{total_patients:,}")
-col2.metric("Total Billing", f"{total_billing:,.0f}")
+col1.metric("Total Patients", f"{total_patients/1000:.1f}K")
+col2.metric("Total Billing", f"{total_billing/1000000:.1f}M")
 col3.metric("Average Billing", f"{average_billing:,.2f}")
 col4.metric("Total Hospitals", f"{total_hospitals:,}")
 
