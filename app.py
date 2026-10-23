@@ -134,7 +134,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-df=pd.read_csv(r"C:\Users\Areeba\oneDrive\Desktop\Batch_316\Hospital Patient Data Analysis Dashboard\healthcare_dataset.csv")
+df = pd.read_csv("healthcare_dataset.csv")
 
 print(df.head())
 print(df.columns)
